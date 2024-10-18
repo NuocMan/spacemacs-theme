@@ -92,6 +92,17 @@ to `auto', tags may not be properly aligned. "
   :type 'boolean
   :group 'spacemacs-theme)
 
+(defcustom spacemacs-theme-force-true-color nil
+	"Force true color."
+	:type 'boolean
+	:group 'spacemacs-theme)
+
+(defun true-color-p ()
+  (or
+   (display-graphic-p)
+   (string-equal (getenv "COLORTERM") "truecolor")
+   (when spacemacs-theme-force-true-color t)))
+
 (defun create-spacemacs-theme (variant theme-name)
   (let* ((true-color-p (lambda ()
                          (or (display-graphic-p)
