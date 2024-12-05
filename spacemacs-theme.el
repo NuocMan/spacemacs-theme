@@ -1005,7 +1005,7 @@ to 'auto, tags may not be properly aligned. "
      `(whitespace-empty ((,class (:background unspecified :foreground ,yellow))))
      `(whitespace-indentation ((,class (:background unspecified :foreground ,war))))
      `(whitespace-line ((,class (:background unspecified :foreground ,comp))))
-     `(whitespace-newline ((,class (:background unspecified :foreground ,comp))))
+     `(whitespace-newline ((,class (:background unspecified :foreground ,act2))))
      `(whitespace-space ((,class (:background unspecified :foreground ,act2))))
      `(whitespace-space-after-tab ((,class (:background unspecified :foreground ,yellow))))
      `(whitespace-space-before-tab ((,class (:background unspecified :foreground ,yellow))))
